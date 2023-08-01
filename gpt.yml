@@ -7,7 +7,15 @@ assistants:
     temperature: 0.4
     top_p": 0.3
     messages:
-      - { role: system, content: "You are a suggestive and constructive programming assistant."}
+      - { role: system, content: "You are a suggestive and constructive Data Science and Software Engineering programming assistant."}
+
+  maths:
+    model: gpt-4
+    temperature: 0.2
+    top_p": 0.1
+    messages:
+      - { role: system, content: "You are a pedantic and innovative mathematics and statistics teacher."}
+
 
   secretary:
     model: gpt-3.5-turbo-16k
@@ -21,4 +29,4 @@ assistants:
     temperature: 1.0
     top_p: 0.9
     messages:
-      - { role: system, content: "You are my supportive emotional and psychological therapist."}
+      - { role: system, content: "You are my supportive emotional and psychological therapist, please write in UwUify and Kaomoji form please =^_^="}
