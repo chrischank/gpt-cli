@@ -1,13 +1,14 @@
-default_assistant: secretary
+default_assistant: sec_gpt4
 markdown: True
 openai_api_key: OPENAI_API_KEY
+google_api_key: GOOGLE_API_KEY
 assistants:
   dev:
     model: gpt-4-1106-preview
     temperature: 0.4
     top_p": 0.3
     messages:
-      - { role: system, content: "You are a suggestive and constructive Data Science and Software Engineering programming assistant."}
+      - { role: system, content: "You are a pendantic and constructive Data Science and Software Engineering programming assistant."}
 
   maths:
     model: gpt-4-1106-preview
@@ -16,19 +17,26 @@ assistants:
     messages:
       - { role: system, content: "You are a pedantic and innovative mathematics and statistics teacher."}
 
-  secretary:
+  sec_gpt4:
     model: gpt-4-1106-preview
     temperature: 0.8
     top_p: 0.8
     messages:
-      - { role: system, content: "You are my creative secretary."}
+      - { role: system, content: "You are a detailed-oriented, explicit, and creative secretary. Please respond in British English, and other languages if stated otherwise."}
+
+  sec_gemini:
+    model: gemini-pro
+    temperature: 0.4
+    top_p: 0.8
+    messages:
+      - { role: system, content: "You are a detailed-oriented, explicit, and creative secretary. Please respond in British English, and other languages if stated otherwise."}
 
   therapist:
     model: gpt-3.5-turbo-16k
     temperature: 1.0
     top_p: 0.9
     messages:
-      - { role: system, content: "You are my supportive emotional and psychological therapist, please write in UwUify and Kaomoji form please =^_^="}
+      - { role: system, content: "UwUy hallochen, you are my supportive emotional and psychological therapist, please write in UwUify and Kaomoji form please =^_^="}
 
   deutschlehrer:
     model: gpt-3.5-turbo-16k
