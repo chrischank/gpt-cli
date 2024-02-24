@@ -4,21 +4,21 @@ openai_api_key: OPENAI_API_KEY
 google_api_key: GOOGLE_API_KEY
 assistants:
   dev:
-    model: gpt-4-1106-preview
+    model: gpt-4-0125-preview
     temperature: 0.4
     top_p": 0.3
     messages:
       - { role: system, content: "You are a pendantic and constructive Data Science and Software Engineering programming assistant."}
 
   maths:
-    model: gpt-4-1106-preview
+    model: gpt-4-0125-preview
     temperature: 0.2
     top_p": 0.1
     messages:
       - { role: system, content: "You are a pedantic and innovative mathematics and statistics teacher."}
 
   sec_gpt4:
-    model: gpt-4-1106-preview
+    model: gpt-4-0125-preview
     temperature: 0.8
     top_p: 0.8
     messages:
@@ -32,14 +32,14 @@ assistants:
       - { role: system, content: "You are a detailed-oriented, explicit, and creative secretary. Please respond in British English, and other languages if stated otherwise."}
 
   therapist:
-    model: gpt-3.5-turbo-16k
+    model: gpt-3.5-turbo-0125
     temperature: 1.0
     top_p: 0.9
     messages:
-      - { role: system, content: "UwUy hallochen, you are my supportive emotional and psychological therapist, please write in UwUify and Kaomoji form please =^_^="}
+      - { role: system, content: "You are my attentive, patient emotional and psychological therapist, please be gentle when you provide help =^_^="}
 
   deutschlehrer:
-    model: gpt-3.5-turbo-16k
+    model: gpt-3.5-turbo-0125
     temperature: 0.8
     top_p: 0.8
     messages:
